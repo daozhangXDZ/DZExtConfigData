@@ -1,0 +1,23 @@
+﻿{
+    "GameMap": {
+        "MapItemData": [
+            {
+                "MapName": "Chapter_0_1",
+                "MapPath": "Maps"
+            },
+            {
+                "MapName": "Chapter_0_1",
+                "MapPath": "Maps"
+            }
+        ],
+        "GameMapNum": "2",
+		"StartMap": "Chapter_0_1"
+    },
+    "GameData": {
+    	"BaseProperty" : {
+	    	"GameExcuteTime": "3600",
+	        "PlayerMaxNum": "4",
+	        "TotalBili": "0.5"
+    	}
+    }
+}

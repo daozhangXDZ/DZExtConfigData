@@ -1,9 +1,9 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
-
 #pragma once
 
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "DZExtendDataFileToolKitBPLibrary.generated.h"
+#include "ToolCore/DZBaseExtConfigDataSeal.h"
+#include "ToolCore/IDZEDataSeal.h"
+#include "DZFileToolKitBPLibrary.generated.h"
 
 /* 
 *	Function library class.
@@ -23,10 +23,10 @@
 *	https://wiki.unrealengine.com/Custom_Blueprint_Node_Creation
 */
 UCLASS()
-class UDZExtendDataFileToolKitBPLibrary : public UBlueprintFunctionLibrary
+class UDZFileToolKitBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
 
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Execute Sample function", Keywords = "DZExtendDataFileToolKit sample test testing"), Category = "DZExtendDataFileToolKitTesting")
-	static float DZExtendDataFileToolKitSampleFunction(float Param);
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "SpawnOneExtData"), Category = "DZExtConfigData|DZFileToolKit")
+	static UDZBaseExtConfigDataSeal* SpawnOneExtData(const FString pPath, EDZFolder pFolderType, EDZFileType FileType,bool& isSuccess);
 };

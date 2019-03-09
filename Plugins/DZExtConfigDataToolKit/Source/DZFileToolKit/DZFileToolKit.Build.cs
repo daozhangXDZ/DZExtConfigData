@@ -2,15 +2,15 @@
 
 using UnrealBuildTool;
 
-public class DZExtendDataFileToolKit : ModuleRules
+public class DZFileToolKit : ModuleRules
 {
-	public DZExtendDataFileToolKit(ReadOnlyTargetRules Target) : base(Target)
+	public DZFileToolKit(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
-				"DZExtendDataFileToolKit/Public"
+				"DZFileToolKit/Public"
 				
 				// ... add public include paths required here ...
 			}
@@ -19,7 +19,7 @@ public class DZExtendDataFileToolKit : ModuleRules
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
-				"DZExtendDataFileToolKit/Private",
+				"DZFileToolKit/Private",
 				
 				// ... add other private include paths required here ...
 			}
@@ -30,7 +30,7 @@ public class DZExtendDataFileToolKit : ModuleRules
 			new string[]
 			{
 				"Core",
-				
+                "Json"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);

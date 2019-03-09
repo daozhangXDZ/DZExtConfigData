@@ -4,7 +4,7 @@
 
 #include "ModuleManager.h"
 
-class FDZExtendDataFileToolKitModule : public IModuleInterface
+class FDZFileToolKitModule : public IModuleInterface
 {
 public:
 
