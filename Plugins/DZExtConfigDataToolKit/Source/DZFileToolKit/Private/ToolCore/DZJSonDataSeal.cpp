@@ -116,14 +116,17 @@ FString UDZJSonDataSeal::GetString(const FString & key, bool & success) const
 {
 	FString outData = "";
 	success = false;
-	if (mData.IsValid() && mData->TryGetStringField(key, outData))
+	if (mData.IsValid())
 	{
-		UE_LOG(DZJsonDataSealLog, Error, TEXT("entry '%s' not found in the field data!"), *key);
-		success = true;
-	}
-	else
-	{
-		success = false;
+		if (mData->TryGetStringField(key, outData))
+		{
+			UE_LOG(DZJsonDataSealLog, Error, TEXT("entry '%s' not found in the field data!"), *key);
+			success = true;
+		}
+		else
+		{
+			success = false;
+		}
 	}
 	return outData;
 }
@@ -132,15 +135,19 @@ bool UDZJSonDataSeal::GetBool(const FString & key, bool & success) const
 {
 	bool outData = "";
 	success = false;
-	if (mData.IsValid() && mData->TryGetBoolField(key, outData))
+	if (mData.IsValid())
 	{
-		UE_LOG(DZJsonDataSealLog, Error, TEXT("entry '%s' not found in the field data!"), *key);
-		success = true;
+		if (mData->TryGetBoolField(key, outData))
+		{
+			UE_LOG(DZJsonDataSealLog, Error, TEXT("entry '%s' not found in the field data!"), *key);
+			success = true;
+		}
+		else
+		{
+			success = false;
+		}
 	}
-	else
-	{
-		success = false;
-	}
+	
 	return outData;
 }
 
@@ -148,14 +155,17 @@ int32 UDZJSonDataSeal::GetInt(const FString & key, bool & success) const
 {
 	double outData = 0.0;
 	success = false;
-	if (mData.IsValid() && mData->TryGetNumberField(key, outData))
+	if (mData.IsValid())
 	{
-		UE_LOG(DZJsonDataSealLog, Error, TEXT("entry '%s' not found in the field data!"), *key);
-		success = true;
-	}
-	else
-	{
-		success = false;
+		if (mData->TryGetNumberField(key, outData))
+		{
+			UE_LOG(DZJsonDataSealLog, Error, TEXT("entry '%s' not found in the field data!"), *key);
+				success = true;
+		}
+		else
+		{
+			success = false;
+		}
 	}
 	return outData;
 }
@@ -164,14 +174,17 @@ float UDZJSonDataSeal::GetFloat(const FString & key, bool & success) const
 {
 	double outData = 0.0;
 	success = false;
-	if (mData.IsValid() && mData->TryGetNumberField(key, outData))
+	if (mData.IsValid())
 	{
-		UE_LOG(DZJsonDataSealLog, Error, TEXT("entry '%s' not found in the field data!"), *key);
-		success = true;
-	}
-	else
-	{
-		success = false;
+		if (mData->TryGetNumberField(key, outData))
+		{
+			UE_LOG(DZJsonDataSealLog, Error, TEXT("entry '%s' not found in the field data!"), *key);
+			success = true;
+		}
+		else
+		{
+			success = false;
+		}
 	}
 	return static_cast<float>(outData);
 }
