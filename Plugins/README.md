@@ -1,19 +1,22 @@
-This is AssetPreview Plugin ,CopyRight by BaiPao_XD
+This is DZExtConfigData Plugin ,CopyRight by BaiPao_XD
 
-::1、Simple Material Preview
+::1、Content Ertent JSON,XML,Custom Data. Read 
 
-::2、Simple SkeletalMesh Animation Preview
+::2、One Standlone Program With  Editor Data
 
 Email : DaoZhang_XDZ@163.com
 
 Tw: BaiPaoXD
 
+Demo Reader:
 
+Parse Data: you can Use 
+![](/Plugins/PluginShowRes/Cap02.PNG)
 
-ShotCap:
+this asset use File :GameConfig/GameConfig.GYDATA
 
-MaterialPreview:
-![](/readermeres/PreviewAsset_DZMP_Shotcap.png)
+Demo Config:
+![](/Plugins/PluginShowRes/Cap03.PNG)
 
-MatrialPreviewGif:
-![](/readermeres/PreviewAsset_DZMP_Shotcap.png)
+Demo Result
+![](/Plugins/PluginShowRes/Cap01.PNG)

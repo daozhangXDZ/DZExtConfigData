@@ -1,4 +1,11 @@
 ﻿{
+ 	"GameData": {
+    	"BaseProperty" : {
+	    	"GameExcuteTime": "3600",
+	        "PlayerMaxNum": "4",
+	        "TotalBili": "0.5"
+    	}
+    },
     "GameMap": {
         "MapItemData": [
             {
@@ -6,18 +13,11 @@
                 "MapPath": "Maps"
             },
             {
-                "MapName": "Chapter_0_1",
+                "MapName": "Chapter_0_3",
                 "MapPath": "Maps"
             }
         ],
         "GameMapNum": "2",
 		"StartMap": "Chapter_0_1"
-    },
-    "GameData": {
-    	"BaseProperty" : {
-	    	"GameExcuteTime": "3600",
-	        "PlayerMaxNum": "4",
-	        "TotalBili": "0.5"
-    	}
     }
 }
