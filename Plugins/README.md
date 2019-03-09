@@ -11,12 +11,12 @@ Tw: BaiPaoXD
 Demo Reader:
 
 Parse Data: you can Use 
-![](/Plugins/PluginShowRes/Cap02.PNG)
+![](/PluginShowRes/Cap02.PNG)
 
 this asset use File :GameConfig/GameConfig.GYDATA
 
 Demo Config:
-![](/Plugins/PluginShowRes/Cap03.PNG)
+![](/PluginShowRes/Cap03.PNG)
 
 Demo Result
-![](/Plugins/PluginShowRes/Cap01.PNG)
+![](/PluginShowRes/Cap01.PNG)
