@@ -6,7 +6,7 @@
 
 DECLARE_LOG_CATEGORY_CLASS(BaseExtConfigDataSeleLog, Log, All);
 
-UCLASS()
+UCLASS(BlueprintType)
 class DZFILETOOLKIT_API UDZBaseExtConfigDataSeal :public UObject, public IIDZEDataSeal
 {
 	GENERATED_UCLASS_BODY()

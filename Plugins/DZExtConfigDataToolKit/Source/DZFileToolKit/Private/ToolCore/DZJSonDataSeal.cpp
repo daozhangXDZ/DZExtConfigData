@@ -367,6 +367,7 @@ TArray<FString> UDZJSonDataSeal::GetObjectKeys()
 UDZJSonDataSeal * UDZJSonDataSeal::Create()
 {
 	UDZJSonDataSeal* vSeal = NewObject<UDZJSonDataSeal>();
+	vSeal->AddToRoot();
 	return vSeal;
 }
 #undef LOCTEXT_NAMESPACE
